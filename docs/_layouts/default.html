@@ -6,72 +6,86 @@
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description | escape }}" />
 
-    <link rel="stylesheet" href="{{ '/assets/css/story.css' | relative_url }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- You can swap fonts later; keep simple for GitHub Pages -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/reddit.css' | relative_url }}">
   </head>
 
   <body>
-    <div class="top-progress" id="topProgress"></div>
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="{{ '/' | relative_url }}">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-name">r/SubredditConflicts</span>
+        </a>
 
-    {% include section_nav.html %}
-
-    <main class="page">
-      <header class="hero" id="top">
-      {% include hero.html %}
-      </header>
-
-      <div class="story">
-      <aside class="rail" aria-label="Sticky visuals">
-        <div class="rail-inner">
-        <div class="rail-card">
-          <div class="rail-title">Figure</div>
-          <div class="rail-slot" id="railSlot">
-          <div class="rail-placeholder">
-            Scroll to load figures…
-          </div>
-          </div>
-          <div class="rail-caption" id="railCaption"></div>
+        <div class="team">
+          <span class="team-pill">Team: Data Sentinels</span>
         </div>
+      </div>
+    </header>
 
-        <div class="rail-card rail-mini">
-          <div class="rail-title">At a glance</div>
-          <ul class="mini-kpis">
-          <li><span class="kpi">18%</span><span class="lbl">of conflicts trigger another within 5 days (RQ1)</span></li>
-          <li><span class="kpi">Skewed</span><span class="lbl">cascades: mostly small, few huge (RQ2)</span></li>
-          <li><span class="kpi">98.8%</span><span class="lbl">alliances vs 1.2% retaliation (RQ5)</span></li>
-          </ul>
-          <div class="note">
-          Missing results are clearly marked — no guesswork.
-          </div>
-        </div>
-        </div>
+    <div class="app">
+      <!-- Left nav -->
+      <aside class="leftnav" aria-label="Research questions navigation">
+        <div class="nav-title">Research Questions</div>
+        <nav class="nav-links">
+          <a href="#rq1">RQ1 · Cascades</a>
+          <a href="#rq2">RQ2 · Length & depth</a>
+          <a href="#rq3">RQ3 · Amplifiers</a>
+          <a href="#rq4">RQ4 · Triads</a>
+          <a href="#rq5">RQ5 · Timing</a>
+          <a href="#rq6">RQ6 · Embeddings</a>
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <div class="nav-title">Shortcuts</div>
+        <nav class="nav-links">
+          <a href="#top">Top</a>
+          <a href="#takeaways">Takeaways</a>
+        </nav>
       </aside>
 
-      <article class="content" id="content">
-        {{ content }}
-        <footer class="footer">
-        <div class="footer-grid">
-          <div>
-          <div class="footer-title">The DataSentinels Team</div>
-          <div class="muted">
+      <!-- Main content -->
+      <main class="main">
+        <div class="content">
+          {{ content }}
+        </div>
+      </main>
+
+      <!-- Right sidebar -->
+      <aside class="rightbar" aria-label="Summary sidebar">
+        <div class="card">
+          <div class="card-head">At a glance</div>
+          <div class="kpi"><span class="k">18%</span> <span class="v">trigger another conflict within 5 days (RQ1)</span></div>
+          <div class="kpi"><span class="k">Skewed</span> <span class="v">cascades: mostly small, few huge (RQ2)</span></div>
+          <div class="kpi"><span class="k">98.8%</span> <span class="v">alliances vs 1.2% retaliation (RQ5)</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">Status</div>
+          <div class="status ok">RQ1 ✓</div>
+          <div class="status ok">RQ2 ✓</div>
+          <div class="status todo">RQ3 pending</div>
+          <div class="status ok">RQ4 ✓</div>
+          <div class="status ok">RQ5 ✓</div>
+          <div class="status todo">RQ6 pending</div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">The DataSentinels Team</div>
+          <p class="muted">
             <ul>
               <li>Clément Josso</li>
               <li>Faruk Zahiragić</li>
               <li>Mamoun Imghi</li>
               <li>Mohamed Bouchnak</li>
               <li>Vasilis Gkikas</li>
-            </ul>
-          </div>
-          </div>
+          </p>
         </div>
-        </footer>
-      </article>
-      </div>
-    </main>
+      </aside>
+    </div>
 
-    <script src="{{ '/assets/js/story.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/reddit.js' | relative_url }}" defer></script>
   </body>
 </html>
