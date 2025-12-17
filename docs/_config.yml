@@ -18,20 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 domain: LaClimSx.github.io
-title: "Subreddit conflicts: the alliances, the rivalries, and the machinations behind both"
+title: Subreddit Conflicts
+description: Alliances, rivalries, and cascade dynamics in Reddit hyperlink conflicts.
 email: clement.josso@epfl.ch
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "/data-story-datasentinels" # the subpath of your site, e.g. /blog
 url: "https://LaClimSx.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  LaClimSx
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+permalink: pretty
+
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+#theme: minima
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
