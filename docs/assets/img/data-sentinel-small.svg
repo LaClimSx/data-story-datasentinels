@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100"
+     width="100"
+     height="100"
+     aria-label="Data Sentinel logo">
+
+  <!-- Outer Reddit-style circle -->
+  <circle cx="50" cy="50" r="48"
+          fill="#FFFFFF"
+          stroke="#FF4500"
+          stroke-width="4"/>
+
+  <!-- Soft inner halo -->
+  <circle cx="50" cy="52" r="22"
+          fill="#FFF4F0"/>
+
+  <!-- Friendly focus dot -->
+  <circle cx="50" cy="52" r="6"
+          fill="#FF4500"/>
+
+  <!-- Subtle smile arc (friendliness cue) -->
+  <path d="M36 60 Q50 66 64 60"
+        fill="none"
+        stroke="#FF8A5C"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+  <!-- Small antenna dot (Reddit nod, not authority) -->
+  <circle cx="62" cy="28" r="4"
+          fill="#FF4500"/>
+
+  <!-- Antenna stem -->
+  <line x1="58" y1="32" x2="62" y2="28"
+        stroke="#FF4500"
+        stroke-width="3"
+        stroke-linecap="round"/>
+</svg>

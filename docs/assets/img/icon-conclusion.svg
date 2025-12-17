@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Conclusion icon">
+  <!-- Outer ring -->
+  <circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#FF4500" stroke-width="4"/>
+
+  <!-- Soft inner background -->
+  <circle cx="50" cy="50" r="38" fill="#FFF3EE"/>
+
+  <!-- Trophy cup -->
+  <path d="M38 34 H62 V44
+           C62 56 56 62 50 62
+           C44 62 38 56 38 44 Z"
+        fill="#FF4500"/>
+
+  <!-- Handles -->
+  <path d="M38 38 C30 38,28 44,30 49 C32 54,36 55,38 55"
+        fill="none" stroke="#FF4500" stroke-width="4" stroke-linecap="round"/>
+  <path d="M62 38 C70 38,72 44,70 49 C68 54,64 55,62 55"
+        fill="none" stroke="#FF4500" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Stem + base -->
+  <rect x="46" y="62" width="8" height="8" rx="2" fill="#FF6A33"/>
+  <rect x="38" y="72" width="24" height="8" rx="3" fill="#FF4500"/>
+
+  <!-- Star badge (completion) -->
+  <circle cx="76" cy="24" r="10" fill="#FF4500"/>
+  <path d="M76 16 L78.6 21.5 L84.6 22.2 L80.2 26
+           L81.4 31.8 L76 28.8 L70.6 31.8
+           L71.8 26 L67.4 22.2 L73.4 21.5 Z"
+        fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 100 100"
+   width="100"
+   height="100"
+   aria-label="Data Sentinel logo"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="data-sentinel-2.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.1972348"
+     inkscape:cx="45.023942"
+     inkscape:cy="58.204028"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <!-- Outer Reddit-style circle -->
+  <circle
+     cx="50"
+     cy="50"
+     r="48"
+     fill="#FFFFFF"
+     stroke="#FF4500"
+     stroke-width="4"
+     id="circle1" />
+  <!-- Soft inner halo -->
+  <!-- Friendly focus dot -->
+  <!-- Subtle smile arc (friendliness cue) -->
+  <!-- Small antenna dot (Reddit nod, not authority) -->
+  <!-- Antenna stem -->
+  <g
+     id="g4">
+    <circle
+       cx="50"
+       cy="53.180698"
+       r="30.658451"
+       fill="#fff4f0"
+       id="circle2"
+       style="stroke-width:1.39357" />
+    <circle
+       cx="50"
+       cy="53.180698"
+       r="8.3613958"
+       fill="#ff4500"
+       id="circle3"
+       style="stroke-width:1.39357" />
+    <path
+       d="m 30.490077,64.329225 q 19.509923,8.361396 39.019846,0"
+       fill="none"
+       stroke="#ff8a5c"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="path3" />
+    <circle
+       cx="66.722794"
+       cy="19.735115"
+       r="5.5742636"
+       fill="#ff4500"
+       id="circle4"
+       style="stroke-width:1.39357" />
+    <line
+       x1="61.148529"
+       y1="25.30938"
+       x2="66.722794"
+       y2="19.735115"
+       stroke="#ff4500"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="line4" />
+  </g>
+</svg>
