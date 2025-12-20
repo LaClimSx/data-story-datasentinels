@@ -16,17 +16,10 @@ title: Subreddit Conflicts
   </div>
 
   <div class="post-body" markdown="1">
-
-Reddit looks like a collection of independent communities — but communities constantly **talk about each other**.
-Sometimes that’s admiration. Sometimes it’s critique. And sometimes it’s outright conflict.
-
-In this project, we study a network of **negative hyperlinks between subreddits** to understand:
-
-- how conflicts **escalate** into cascades (or die out),
-- how often communities respond with **alliances vs retaliation**,
-- whether classic social patterns (like **balance theory**) hold up in practice.
-</div>
-</div>
+    In an online ecosystem as dynamic and decentralized as Reddit, individual communities — known as subreddits — don’t exist in isolation. They constantly **interact, influence, and sometimes conflict with one another**. While much research focuses on collaboration or user behavior within individual communities, the dynamics of conflict across subreddit networks remain poorly understood. Mapping how antagonistic interactions spread, escalate, or dissipate across the Reddit ecosystem can illuminate broader patterns of online social behavior.
+        
+    This project investigates negative hyperlinks between subreddits as a proxy for conflict interactions, using network analysis to explore how conflicts cascade, which communities act as amplifiers, and whether classic theories of social balance hold in decentralized online environments like Reddit. By combining quantitative measurement with narrative interpretation, we intend not just to describe conflict — but to understand its mechanics, its reach, and its implications for community moderation and platform health. In doing so, this study contributes to a growing tradition of data storytelling in digital sociology: transforming raw interaction data into insight that informs action and decision-making within online spaces. 
+  </div>
 
 
 <div class="post" id="rq1">
@@ -276,3 +269,11 @@ We haven’t computed this conclusion yet. This analysis will connect *content s
 - Alliances dominate retaliations, and timing alone doesn’t predict response type (**RQ5**)  
 - Unbalanced triads are common, especially among cross-linking “meta” communities (**RQ4**)  
 - Amplification (**RQ3**) and embedding similarity (**RQ6**) remain open — explicitly and transparently
+
+When we began exploring subreddit conflicts, it was easy to imagine Reddit as a platform dominated by large-scale, ongoing wars between communities. The data tells a **quieter, more fragmented story**. Most conflicts appear suddenly, spread briefly, and then fade away. Rather than endless feuds, Reddit is shaped by many short-lived skirmishes, driven by moments of disagreement rather than sustained hostility.
+
+Yet these conflicts are **far from random**. A single negative interaction often invites another, creating short chains of response. Interestingly, communities are more likely to form alliances than to retaliate directly, suggesting that Reddit’s social structure favors alignment over escalation. The familiar idea that “the enemy of my enemy is my friend” only partially applies here — many relationships remain unresolved and unbalanced, reflecting the messiness of real social behavior.
+
+What emerges is a view of Reddit as a living network of communities, where conflict spreads through visibility and proximity, but rarely spirals out of control. Some subreddits play outsized roles in shaping conflict, while others act as stabilizers, absorbing tension rather than amplifying it. Not every research question produced a definitive answer — and that uncertainty is part of the story.
+
+Ultimately, this project is not just about tracking negative links between subreddits. It is about understanding how disagreement moves through online spaces, how communities respond, and what keeps a massive platform like Reddit from collapsing into constant conflict. By turning interaction data into narrative, we aim to offer a clearer way to see how digital communities negotiate disagreement — one link, one reaction, and one brief conflict at a time.
