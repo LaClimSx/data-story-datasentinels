@@ -16,11 +16,12 @@ title: Subreddit Conflicts
   </div>
 
   <div class="post-body" markdown="1">
-    In an online ecosystem as dynamic and decentralized as Reddit, individual communities — known as subreddits — don’t exist in isolation. They constantly **interact, influence, and sometimes conflict with one another**. While much research focuses on collaboration or user behavior within individual communities, the dynamics of conflict across subreddit networks remain poorly understood. Mapping how antagonistic interactions spread, escalate, or dissipate across the Reddit ecosystem can illuminate broader patterns of online social behavior.
-        
-    This project investigates negative hyperlinks between subreddits as a proxy for conflict interactions, using network analysis to explore how conflicts cascade, which communities act as amplifiers, and whether classic theories of social balance hold in decentralized online environments like Reddit. By combining quantitative measurement with narrative interpretation, we intend not just to describe conflict — but to understand its mechanics, its reach, and its implications for community moderation and platform health. In doing so, this study contributes to a growing tradition of data storytelling in digital sociology: transforming raw interaction data into insight that informs action and decision-making within online spaces. 
-  </div>
 
+In an online ecosystem as dynamic and decentralized as Reddit, individual communities — known as subreddits — don’t exist in isolation. They constantly **interact, influence, and sometimes conflict with one another**. While much research focuses on collaboration or user behavior within individual communities, the dynamics of conflict across subreddit networks remain poorly understood. Mapping how antagonistic interactions spread, escalate, or dissipate across the Reddit ecosystem can illuminate broader patterns of online social behavior.
+        
+This project investigates negative hyperlinks between subreddits as a proxy for conflict interactions, using network analysis to explore how conflicts cascade, which communities act as amplifiers, and whether classic theories of social balance hold in decentralized online environments like Reddit. By combining quantitative measurement with narrative interpretation, we intend not just to describe conflict — but to understand its mechanics, its reach, and its implications for community moderation and platform health. In doing so, this study contributes to a growing tradition of data storytelling in digital sociology: transforming raw interaction data into insight that informs action and decision-making within online spaces. 
+</div>
+</div>
 
 <div class="post" id="rq1">
   <div class="post-top" markdown="0">
