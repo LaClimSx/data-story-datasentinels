@@ -20,6 +20,11 @@ title: Subreddit Conflicts
 In an online ecosystem as dynamic and decentralized as Reddit, individual communities — known as subreddits — don’t exist in isolation. They constantly **interact, influence, and sometimes conflict with one another**. While much research focuses on collaboration or user behavior within individual communities, the dynamics of conflict across subreddit networks remain poorly understood. Mapping how antagonistic interactions spread, escalate, or dissipate across the Reddit ecosystem can illuminate broader patterns of online social behavior.
         
 This project investigates negative hyperlinks between subreddits as a proxy for conflict interactions, using network analysis to explore how conflicts cascade, which communities act as amplifiers, and whether classic theories of social balance hold in decentralized online environments like Reddit. By combining quantitative measurement with narrative interpretation, we intend not just to describe conflict — but to understand its mechanics, its reach, and its implications for community moderation and platform health. In doing so, this study contributes to a growing tradition of data storytelling in digital sociology: transforming raw interaction data into insight that informs action and decision-making within online spaces. 
+
+<div markdown="0">
+{% include intro_plot.html %}
+</div>
+
 </div>
 </div>
 
@@ -35,7 +40,6 @@ This project investigates negative hyperlinks between subreddits as a proxy for 
         <div class="post-meta">Cascades · Escalation · Temporal dynamics</div>
         </div>
     </div>
-    <div class="tag ok">Results ready</div>
   </div>
 
   <div class="post-body" markdown="1">
@@ -74,7 +78,6 @@ Compared to a randomized baseline, cascade frequency remains **consistently high
             <div class="post-meta">Cascade length · Cascade depth · Network structure</div>
         </div>
     </div>
-    <div class="tag ok">Results ready</div>
   </div>
 
   <div class="post-body" markdown="1">
@@ -87,8 +90,8 @@ We study:
 - **Cascade depth**: the longest directed chain
 
 <div markdown="0">
-{% include rq2_length_plot.html %}
-{% include rq2_depth_plot.html %}
+{% include rq2_1_length_plot.html %}
+{% include rq2_2_depth_plot.html %}
 </div>
 
 ### Findings
@@ -113,7 +116,6 @@ Most cascades are **short and shallow**, but a small number show **large length 
             <div class="post-meta">Amplification · Structural roles · Open question</div>
         </div>
     </div>
-    <div class="tag todo">Pending</div>
   </div>
 
   <div class="post-body" markdown="1">
@@ -122,12 +124,12 @@ Most cascades are **short and shallow**, but a small number show **large length 
 *Are certain subreddits recurrent “amplifiers” that spread conflict more frequently than others?*
 
 <div markdown="0">
-{% include rq3_plot.html %}
+{% include rq3_1_amplification_count.html %}
 </div>
 
-<p class="muted">
-Results not yet available.
-</p>
+<div markdown="0">
+{% include rq3_2_amplification_count_per_days.html %}
+</div>
 
 We haven’t computed this result yet. This section is intentionally left open: identifying amplifiers could explain why a few cascades become exceptionally large while most remain local.
 
@@ -147,7 +149,6 @@ We haven’t computed this result yet. This section is intentionally left open: 
             <div class="post-meta">Balance theory · Signed triads · Meta communities</div>
         </div>
     </div>
-    <div class="tag ok">Results ready</div>
   </div>
 
   <div class="post-body" markdown="1">
@@ -156,7 +157,7 @@ We haven’t computed this result yet. This section is intentionally left open: 
 *Do triads of subreddits follow balance theory patterns more often than expected by chance?*
 
 <div markdown="0">
-{% include rq4_plot.html %}
+{% include rq4_interactive_fights_triads.html %}
 </div>
 
 ### Findings
@@ -183,7 +184,6 @@ This suggests that balance theory, at least in its simplest form, only partially
             <div class="post-meta">Temporal gaps · Alliances · Retaliation</div>
         </div>
     </div>
-    <div class="tag ok">Results ready</div>
   </div>
 
   <div class="post-body" markdown="1">
@@ -194,7 +194,27 @@ This suggests that balance theory, at least in its simplest form, only partially
 We define a **temporal gap** as the time between a conflict **A → B** and the next conflict where **B** becomes the source of a subsequent conflict.
 
 <div markdown="0">
-{% include rq5_plot.html %}
+{% include rq5_1_interactive_temporal.html %}
+</div>
+
+<div markdown="0">
+{% include rq5_2_interactive_responses_sentiment.html %}
+</div>
+
+<div markdown="0">
+{% include rq5_3_interactive_response_boxplot.html %}
+</div>
+
+<div markdown="0">
+{% include rq5_4_interactive_semantic.html %}
+</div>
+
+<div markdown="0">
+{% include rq5_5_interactive_pca.html %}
+</div>
+
+<div markdown="0">
+{% include rq5_6_interactive_roc.html %}
 </div>
 
 ### Findings
@@ -223,7 +243,6 @@ This suggests coalition-building is the default strategy, driven by factors beyo
             <div class="post-meta">Embeddings · Semantic similarity · Open question</div>
         </div>
     </div>
-    <div class="tag todo">Pending</div>
   </div>
 
   <div class="post-body" markdown="1">
@@ -237,10 +256,6 @@ Cosine similarity measures how alike two subreddits are.
 **Hypothesis:**  
 High similarity → alliances  
 Low similarity → retaliation
-
-<div markdown="0">
-{% include rq6_plot.html %}
-</div>
 
 <p class="muted">
 Results not yet available.
