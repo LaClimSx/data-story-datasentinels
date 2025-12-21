@@ -304,104 +304,189 @@ It just… stays weird.
 <div class="comment" id="ans4">
   <div class="post-top" markdown="0">
     <div class="post-title-wrap">
-    <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
+      <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
       <div>
         <div class="post-meta">u/benevolentstudent401</div>
       </div>
     </div>
   </div>
 
-<div class="post-body" markdown="1">
+  <div class="post-body" markdown="1">
 One thing I still can’t shake is how *fast* some of these responses feel.
 
 When a subreddit gets criticized and then links out again almost immediately, it really looks like retaliation — like a clapback. And when the response comes way later, it feels calmer, maybe more deliberate.
 
-Does timing actually matter here, or is that just how it looks from the outside?
+Is there anything in the data that actually supports that, or is timing basically just vibes?
+  </div>
 </div>
+
+<div class="comment" id="ans4_1">
+  <div class="post-top" markdown="0">
+    <div class="post-title-wrap">
+      <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
+      <div>
+        <div class="post-meta">u/datasentinels</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-body" markdown="1">
+That’s *exactly* the intuition we had going in.
+
+So we tested it in a few different ways: first by looking at **how responses accumulate over time**, and then by checking whether **fast vs. slow** responses differ in sentiment or structure.
+
+Let’s walk through it step by step.
+  </div>
 </div>
 
 <div class="post" id="rq5">
   <div class="post-top" markdown="0">
     <div class="post-title-wrap">
-    <img
-    src="{{ '/assets/img/data-sentinel.svg' | relative_url }}"
-    alt=""
-    class="rq-icon rq5">
-        <div>
-            <h2 class="post-title">Timing Isn’t Everything</h2>
-            <div class="post-meta">u/datasentinels</div>
-        </div>
+      <img
+        src="{{ '/assets/img/data-sentinel.svg' | relative_url }}"
+        alt=""
+        class="rq-icon rq5">
+      <div>
+        <h2 class="post-title">Timing Isn’t Everything</h2>
+        <div class="post-meta">u/datasentinels</div>
+      </div>
     </div>
   </div>
 
   <div class="post-body" markdown="1">
 
-A pretty natural assumption when you see subreddit drama is that speed equals intent. If a response is fast, it must be retaliation. If it’s slow, maybe people cooled off.
+A natural assumption on Reddit is that **speed equals intent**:
+- fast response → retaliation
+- slow response → cooling off (or reconciliation)
 
-So we tested that idea directly.
+So we tested timing as a predictor of what a targeted subreddit does next.
 
-We looked at the time gap between a negative link A → B and the next moment when B links negatively to anyone else. Then we asked a simple question: does reacting quickly make a subreddit more likely to retaliate, and does reacting slowly make it more likely to align?
+---
+
+### 1) Do “follow-up conflicts” mostly happen quickly?
+We start simple: after a negative link **A → B**, how does the probability of “B gets involved in another negative link” grow as we widen the time window?
 
 <div markdown="0">
 {% include rq5_1_interactive_temporal.html %}
 </div>
 
+If timing were driving escalation, we’d expect a strong “front-loaded” effect (lots of meaningful action immediately, then a drop). Instead, the curve is pretty smooth: things happen, but there isn’t a clean “fast = special” boundary.
+
+<div class="comment" id="ans4_2">
+  <div class="post-top" markdown="0">
+    <div class="post-title-wrap">
+      <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
+      <div>
+        <div class="post-meta">u/benevolentstudent401</div>
+      </div>
+    </div>
+  </div>
+  <div class="post-body" markdown="1">
+So basically: stuff happens after getting called out, but it’s not like “within 6 hours = revenge mode”?
+  </div>
+</div>
+
+<div class="comment" id="ans4_3">
+  <div class="post-top" markdown="0">
+    <div class="post-title-wrap">
+      <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
+      <div>
+        <div class="post-meta">u/datasentinels</div>
+      </div>
+    </div>
+  </div>
+  <div class="post-body" markdown="1">
+Exactly. Next we asked the sharper version of your question: even if responses happen at different speeds, does that change *what kind* of response it is?
+  </div>
+</div>
+
+---
+
+### 2) Are fast responses more aggressive?
+Here we look at **sentiment of the response** relative to how quickly it happens.
+
 <div markdown="0">
 {% include rq5_2_interactive_responses_sentiment.html %}
 </div>
+
+And here’s another way to see the same thing (distribution-level view):
 
 <div markdown="0">
 {% include rq5_3_interactive_response_boxplot.html %}
 </div>
 
+The punchline is consistent: **fast responses aren’t systematically harsher**, and **slow responses aren’t systematically softer**. Timing just doesn’t buy you much explanatory power.
+
+---
+
+### 3) The real imbalance: alliances dominate retaliation
+Once we classify what happens after a subreddit is targeted, one fact overwhelms everything else:
+
+- **98.8% alliances**
+- **1.2% retaliation**
+
+In practice, that means most subreddits don’t “clap back” at the original source. Instead, they tend to **align**, redirect attention, or participate in broader coalitions.
+
+<div class="comment" id="ans4_4">
+  <div class="post-top" markdown="0">
+    <div class="post-title-wrap">
+      <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
+      <div>
+        <div class="post-meta">u/benevolentstudent401</div>
+      </div>
+    </div>
+  </div>
+  <div class="post-body" markdown="1">
+Wait—only 1.2% is retaliation? That’s way lower than I expected.
+So is Reddit drama mostly just… dogpiling?
+  </div>
+</div>
+
+<div class="comment" id="ans4_5">
+  <div class="post-top" markdown="0">
+    <div class="post-title-wrap">
+      <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
+      <div>
+        <div class="post-meta">u/datasentinels</div>
+      </div>
+    </div>
+  </div>
+  <div class="post-body" markdown="1">
+That’s the uncomfortable interpretation, yes.
+
+And it leads to the next question: if timing doesn’t explain much, maybe **content / similarity** does.
+So we tested whether subreddits that are “close in topic space” behave differently.
+  </div>
+</div>
+
+---
+
+### 4) If it’s not timing, is it similarity?
+We represent each subreddit with a semantic embedding and measure how close communities are in topic space.
+
 <div markdown="0">
 {% include rq5_4_interactive_semantic.html %}
 </div>
+
+Then we look at whether those representations separate alliance vs retaliation outcomes:
 
 <div markdown="0">
 {% include rq5_5_interactive_pca.html %}
 </div>
 
+Finally, we quantify predictive performance:
+
 <div markdown="0">
 {% include rq5_6_interactive_roc.html %}
 </div>
 
-Across multiple plots and representations, the answer is… nope.
+Putting these together: **timing is weak**, but **similarity carries signal**. Subreddits that share context (same institution, same topics, same stressors) are more likely to align than attack each other directly.
 
-Timing just doesn’t do much. Fast responses aren’t more aggressive. Slow responses aren’t more conciliatory. No matter how we slice the time window, temporal proximity doesn’t meaningfully predict how a subreddit behaves next.
+That ties back to the original question:
+r/csmastudents and r/ADA live in the same ecosystem. When people are stressed about the same thing, the “response” isn’t usually retaliation — it’s shared venting and coalition-building.
 
-What does dominate the picture is this overwhelming imbalance:
-
-- 98.8% alliances
-- 1.2% retaliation
-
-In other words, when subreddits respond after being targeted, they almost never strike back directly. Instead, they overwhelmingly align with others, redirect attention, or join broader coalitions against a shared issue or target.
-
-This already explains a lot about why conflict on Reddit feels the way it does. People expect tit-for-tat fights, but what actually happens is dogpiling without direct retaliation.
-
-At that point, the obvious follow-up question is: okay, if timing doesn’t matter, then what does?
-
-One strong candidate is similarity.
-
-Subreddits aren’t random. Some talk about the same classes, the same majors, the same institutions, the same frustrations. To capture that, we represent each subreddit using a semantic embedding and measure how close communities are in topic space.
-
-The intuition going in is straightforward:
-
-- More similar communities → more likely to align
-- Less similar communities → more likely to retaliate
-
-And this is where things really connect back to the original question.
-
-r/csmastudents and r/ADA aren’t just two unrelated subreddits throwing shade at each other. They’re semantically close. They exist in the same ecosystem. That shared context makes alliances and collective venting much more likely than direct retaliation.
-
-So when r/ADA seems to be constantly catching heat, it’s probably not because people are obsessed with attacking it — it’s because similar communities keep aligning around the same grievances, over and over again.
-
-The key takeaway from merging these results is this:
-
-Reddit conflict isn’t driven by how fast people respond.
-It’s driven by who is similar, who is visible, and who ends up on the same side.
-
-That combination creates the feeling of persistent hostility, even when almost no one is actually retaliating.
+**Takeaway:** Reddit conflict isn’t driven by how fast people respond.  
+It’s driven more by **who is similar**, **who is visible**, and **who repeatedly becomes a focal point**.
 
   </div>
 </div>
@@ -409,20 +494,20 @@ That combination creates the feeling of persistent hostility, even when almost n
 <div class="comment" id="ans5">
   <div class="post-top" markdown="0">
     <div class="post-title-wrap">
-    <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
+      <img src="{{ '/assets/img/icon-intro.svg' | relative_url }}" alt="" class="rq-icon">
       <div>
         <div class="post-meta">u/benevolentstudent401</div>
       </div>
     </div>
   </div>
 
-<div class="post-body" markdown="1">
-Alright, I think I’m starting to get the picture.
+  <div class="post-body" markdown="1">
+Okay, that actually clicks.
 
-If people usually *aren’t* retaliating directly, and timing doesn’t explain much, then it seems like something else has to be driving who aligns with whom.
+So it’s not “they replied fast so they were mad.” It’s more like: the same cluster of related subreddits keeps aligning around the same grievances, and the visible target gets hit repeatedly.
 
-Is it mostly about shared context or similar topics? Like, do subreddits that complain about the same things just naturally pile on together?
-</div>
+That makes it feel personal when you’re inside it… but it’s more structural than I thought.
+  </div>
 </div>
 
 <div class="post" id="takeaways">
@@ -476,7 +561,7 @@ And what feels like “constant hate” is usually many small moments of frictio
     <div class="post-title-wrap">
     <img src="{{ '/assets/img/icon-conclusion.svg' | relative_url }}" alt="" class="rq-icon">
         <div>
-            <h2 class="post-title">Takeaways</h2>
+            <h2 class="post-title">Thanks again!</h2>
             <div class="post-meta">u/benevolentstudent401</div>
         </div>
     </div>
