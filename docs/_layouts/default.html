@@ -1,87 +1,97 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ site.description | escape }}" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>
+            {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
+        </title>
+        <meta name="description" content="{{ site.description | escape }}" />
 
-    <link rel="stylesheet" href="{{ '/assets/css/reddit.css' | relative_url }}">
+        <link
+            rel="stylesheet"
+            href="{{ '/assets/css/reddit.css' | relative_url }}"
+        />
 
-    <link rel="icon" type="image/svg+xml"
-      href="{{ '/assets/img/data-sentinel.svg' | relative_url }}">
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="{{ '/assets/img/data-sentinel.svg' | relative_url }}"
+        />
+    </head>
 
-  </head>
+    <body>
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="topbar-inner">
+                <a class="brand" href="{{ '/' | relative_url }}">
+                    <img
+                        src="{{ '/assets/img/data-sentinel.svg' | relative_url }}"
+                        alt="Data Sentinel logo"
+                        class="brand-logo"
+                    />
 
-  <body>
-    <!-- Topbar -->
-    <header class="topbar">
-      <div class="topbar-inner">
-        <a class="brand" href="{{ '/' | relative_url }}">
-          <img src="{{ '/assets/img/data-sentinel.svg' | relative_url }}" alt="Data Sentinel logo" class="brand-logo">
+                    <span class="brand-name">r/SubredditConflicts</span>
+                </a>
 
-          <span class="brand-name">r/SubredditConflicts</span>
-        </a>
-
-        <div class="team">
-          <span class="team-pill">Team: Data Sentinels</span>
-        </div>
-      </div>
-    </header>
-
-    <div class="app">
-      <!-- Left nav -->
-
-      <aside class="leftcol">
-
-
-        <div class="leftnav" aria-label="Research questions navigation">
-          <div class="nav-title">Research Questions</div>
-          <nav class="nav-links">
-            <a href="#rq1">RQ1 · Cascades</a>
-            <a href="#rq2">RQ2 · Length & depth</a>
-            <a href="#rq3">RQ3 · Amplifiers</a>
-            <a href="#rq4">RQ4 · Triads</a>
-            <a href="#rq5">RQ5 · Timing</a>
-            <a href="#rq6">RQ6 · Embeddings</a>
-          </nav>
-
-          <div class="nav-divider"></div>
-
-          <div class="nav-title">Shortcuts</div>
-          <nav class="nav-links">
-            <a href="#top">Top</a>
-            <a href="#takeaways">Takeaways</a>
-          </nav>
-        </div>
-
-        <div class="leftcards">
-          <div class="card">
-            <div class="card-head">The DataSentinels Team</div>
-            <div class="muted">
-              <ul>
-                <li>Clément Josso</li>
-                <li>Faruk Zahiragić</li>
-                <li>Mamoun Imghi</li>
-                <li>Mohamed Bouchnak</li>
-                <li>Vasilis Gkikas</li>
-              </ul>
+                <div class="team">
+                    <span class="team-pill">Team: Data Sentinels</span>
+                </div>
             </div>
-          </div>
+        </header>
+
+        <div class="app">
+            <!-- Left nav -->
+
+            <aside class="leftcol">
+                <div class="leftnav" aria-label="Research questions navigation">
+                    <div class="nav-title">Research Questions</div>
+                    <nav class="nav-links">
+                        <a href="#top">Pinned · Why do we hate on r/ADA ?</a>
+                        <a href="#about">About Subreddit Conflicts</a>
+
+                        <div class="nav-divider"></div>
+
+                        <a href="#rq1">When One Conflict Sparks Another</a>
+                        <a href="#rq2">How Far Do Conflicts Travel?</a>
+                        <a href="#rq3">Who Amplifies Conflict?</a>
+                        <a href="#rq4"
+                            >Triads, Rivalries, and the Failure of Balance</a
+                        >
+                        <a href="#rq5">Timing Isn’t Everything</a>
+
+                        <div class="nav-divider"></div>
+
+                        <a href="#takeaways">Takeaways</a>
+                        <a href="#takeaways_user">OP Wrap-Up</a>
+                    </nav>
+                </div>
+
+                <div class="leftcards">
+                    <div class="card">
+                        <div class="card-head">The DataSentinels Team</div>
+                        <div class="muted">
+                            <ul>
+                                <li>Clément Josso</li>
+                                <li>Faruk Zahiragić</li>
+                                <li>Mamoun Imghi</li>
+                                <li>Mohamed Bouchnak</li>
+                                <li>Vasilis Gkikas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main content -->
+            <main class="main">
+                <div class="content">{{ content }}</div>
+            </main>
         </div>
 
-
-      </aside>
-
-      <!-- Main content -->
-      <main class="main">
-        <div class="content">
-          {{ content }}
-        </div>
-      </main>
-
-    </div>
-
-    <script src="{{ '/assets/js/reddit.js' | relative_url }}" defer></script>
-  </body>
+        <script
+            src="{{ '/assets/js/reddit.js' | relative_url }}"
+            defer
+        ></script>
+    </body>
 </html>
