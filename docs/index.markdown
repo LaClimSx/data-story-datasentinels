@@ -416,15 +416,15 @@ And here’s another way to see the same thing (distribution-level view):
 {% include rq5_3_interactive_response_boxplot.html %}
 </div>
 
-The punchline is consistent: **fast responses aren’t systematically harsher**, and **slow responses aren’t systematically softer**. Timing just doesn’t buy you much explanatory power.
+It seems that retaliations happen slightly faster on average, a fact we can back up with a statistical analysis. But the effect is small,the distributions overlap a lot, and there’s no clear cutoff where “fast = angry” and “slow = chill.”
 
 ---
 
 ### 3) The real imbalance: alliances dominate retaliation
 Once we classify what happens after a subreddit is targeted, one fact overwhelms everything else:
 
-- **98.8% alliances**
-- **1.2% retaliation**
+- **98.3% alliances**
+- **1.74% retaliation**
 
 In practice, that means most subreddits don’t “clap back” at the original source. Instead, they tend to **align**, redirect attention, or participate in broader coalitions.
 
@@ -438,7 +438,7 @@ In practice, that means most subreddits don’t “clap back” at the original 
     </div>
   </div>
   <div class="post-body" markdown="1">
-Wait,only 1.2% is retaliation? That’s way lower than I expected.
+Wait,only 1.74% is retaliation? That’s way lower than I expected.
 So is Reddit drama mostly just… dogpiling?
   </div>
 </div>
@@ -481,10 +481,9 @@ Finally, we quantify predictive performance:
 {% include rq5_6_interactive_roc.html %}
 </div>
 
-Putting these together: **timing is weak**, but **similarity carries signal**. Subreddits that share context (same institution, same topics, same stressors) are more likely to align than attack each other directly.
+Putting these together: **timing is weak**, but **similarity carries signal**. Alliances are "Strategic": Because alliances have lower similarity, they represent broad coalitions/communities from different areas of Reddit coming together against a common foe.
 
-That ties back to the original question:
-r/csmastudents and r/ADA live in the same ecosystem. When people are stressed about the same thing, the “response” isn’t usually retaliation, it’s shared venting and coalition-building.
+Retaliations are "Intra-group": Hostility is concentrated among "neighbors." Whether it is different factions of a gaming community or rival political subreddits, the data suggests that the most intense and immediate conflicts occur between those who are most alike. On Reddit, you are most likely to be attacked by, and retaliate against, the communities you are most similar to.
 
 **Takeaway:** Reddit conflict isn’t driven by how fast people respond.  
 It’s driven more by **who is similar**, **who is visible**, and **who repeatedly becomes a focal point**.
