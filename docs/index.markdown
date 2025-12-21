@@ -60,22 +60,22 @@ We are delighted to see you take an interest in the conflictual and negative rel
   </div>
 
   <div class="post-body" markdown="1">
-Reddit is often described as a collection of separate communities — thousands of subreddits, each with its own culture, rules, and conversations. But these communities do not exist in isolation. They constantly reference one another, react to events elsewhere on the platform, and sometimes clash in very public ways.
+Reddit is often described as a collection of separate communities, thousands of subreddits, each with its own culture, rules, and conversations. But these communities do not exist in isolation. They constantly reference one another, react to events elsewhere on the platform, and sometimes clash in very public ways.
 
 One of the clearest traces of these interactions is the hyperlink. When a subreddit links to a post from another community, it is often doing more than just sharing content. In many cases, the link signals criticism, disagreement, or disapproval. These moments leave behind a visible footprint of tension between communities.
 
 Here, we look closely at those negative links and what happens after they appear. We follow how conflicts begin, how they spread from one subreddit to another, and how long they tend to last. We also examine which communities play a central role in keeping conflicts alive, and whether classic ideas about alliances and rivalries hold up in this online setting.
 
-What emerges is not a picture of Reddit as a platform locked in endless battles between opposing groups. Instead, the patterns suggest something quieter and more dynamic. Disagreements surface frequently, travel across community boundaries, and draw in new participants — but most of the time, they fade away just as quickly.
+What emerges is not a picture of Reddit as a platform locked in endless battles between opposing groups. Instead, the patterns suggest something quieter and more dynamic. Disagreements surface frequently, travel across community boundaries, and draw in new participants, but most of the time, they fade away just as quickly.
 
 By tracing these interactions over time, we can better understand how conflict moves through Reddit: when it escalates, when it stalls, and why large-scale breakdowns are far less common than they might appear.
 
-**Disclaimer**: Throughout this page, we use ‘conflict’ as shorthand for negatively framed cross-subreddit references. This includes criticism, mockery, and disapproval — not necessarily coordinated hostility or sustained antagonism
+**Disclaimer**: Throughout this page, we use ‘conflict’ as shorthand for negatively framed cross-subreddit references. This includes criticism, mockery, and disapproval, not necessarily coordinated hostility or sustained antagonism
 <div markdown="0">
 {% include intro_plot.html %}
 </div>
 
-**How to read the figure above:** it gives the overall distribution of link sentiments, setting the baseline for everything that follows. The rest of the page focuses on the **negative** portion of that distribution — the links most associated with antagonism.
+**How to read the figure above:** it gives the overall distribution of link sentiments, setting the baseline for everything that follows. The rest of the page focuses on the **negative** portion of that distribution, the links most associated with antagonism.
 
 </div>
 </div>
@@ -123,7 +123,7 @@ The plot below gets at something pretty close to your original question: is the 
 {% include rq1_plot.html %}
 </div>
 
-Short answer: sometimes, yes — but way less often than people assume.
+Short answer: sometimes, yes, but way less often than people assume.
 
 What we did here was simple in spirit. Every time one subreddit links negatively to another, we watch what happens next. If the targeted subreddit later turns around and links negatively to someone else, we count that as a cascade. In other words: did getting dragged into conflict make them more likely to pass it on?
 
@@ -134,9 +134,9 @@ That’s interesting on its own, but the key part is the comparison to the rando
 That tells us something important: being on the receiving end of a negative link actually increases the odds that a subreddit later gets involved in conflict itself.
 
 And here’s where this connects back to “why does r/ADA get so much hate?”
-If a subreddit becomes a frequent target — even for legitimate reasons like difficulty, grading policies, or institutional frustration — it’s more likely to end up embedded in these small chains of negativity. Not because everyone independently decides to hate it, but because conflict has momentum.
+If a subreddit becomes a frequent target, even for legitimate reasons like difficulty, grading policies, or institutional frustration, it’s more likely to end up embedded in these small chains of negativity. Not because everyone independently decides to hate it, but because conflict has momentum.
 
-Also worth noting: this isn’t driven by just a handful of drama hubs. Thousands of different subreddits appear as cascade starters. So it’s not just “toxic communities being toxic” — it’s a general pattern of how attention and criticism move on Reddit.
+Also worth noting: this isn’t driven by just a handful of drama hubs. Thousands of different subreddits appear as cascade starters. So it’s not just “toxic communities being toxic”, it’s a general pattern of how attention and criticism move on Reddit.
 
 Bottom line: conflict does spread more than chance would predict, but it usually stops quickly. That makes recurring targets feel constantly under fire, even if no single conflict is that big on its own.
 
@@ -174,7 +174,7 @@ And the story they tell is very consistent: most conflicts burn out fast.
 
 The vast majority of cascades are tiny. One extra step. Maybe two. That’s it. In practical terms, this means a subreddit gets criticized, reacts somewhere else, and then the whole thing fizzles out. No long-running feud. No platform-wide war.
 
-Yes, there are longer cascades. You can see the long tail in both plots. Occasionally, a conflict stays hot long enough to jump across several communities, either because it taps into something emotional, symbolic, or already controversial. These are the cases people remember — and screenshot — because they’re loud and messy.
+Yes, there are longer cascades. You can see the long tail in both plots. Occasionally, a conflict stays hot long enough to jump across several communities, either because it taps into something emotional, symbolic, or already controversial. These are the cases people remember, and screenshot, because they’re loud and messy.
 
 But they’re rare.
 
@@ -228,7 +228,7 @@ Well, it's more complicated than that...
 
 Up to now, we’ve mostly talked about whether conflict spreads. This section asks a slightly different question: who helps it spread the most?
 
-Because let’s be real — not every subreddit plays the same role. Some communities occasionally stumble into conflict and move on. Others seem to show up again and again whenever things get heated.
+Because let’s be real, not every subreddit plays the same role. Some communities occasionally stumble into conflict and move on. Others seem to show up again and again whenever things get heated.
 
 That’s what we’re calling amplification here.
 
@@ -248,7 +248,7 @@ So the second plot normalizes by time, asking a fairer question: how often does 
 What starts to emerge is a familiar pattern. A small number of communities act like repeat broadcasters. They’re not necessarily the ones starting fights, but they’re very good at keeping conflict visible, linking outward, and pulling more subreddits into the conversation.
 
 This matters for questions like “why does it always feel like r/ADA is under fire?”
-If a few highly active or central communities keep resurfacing the same targets, even short-lived conflicts can stack up in people’s feeds. Over time, that creates the impression of constant hostility — even if no single conflict is especially large.
+If a few highly active or central communities keep resurfacing the same targets, even short-lived conflicts can stack up in people’s feeds. Over time, that creates the impression of constant hostility, even if no single conflict is especially large.
 
   </div>
 </div>
@@ -276,7 +276,7 @@ In offline social networks, there’s a classic idea called balance theory. Very
 
 So we asked: does that happen on Reddit?
 
-To test this, we looked at triads — groups of three subreddits — and checked whether their positive and negative links form “balanced” or “unbalanced” patterns. The interactive plot below highlights where those unbalanced structures show up.
+To test this, we looked at triads, groups of three subreddits, and checked whether their positive and negative links form “balanced” or “unbalanced” patterns. The interactive plot below highlights where those unbalanced structures show up.
 
 <div markdown="0"> {% include rq4_interactive_fights_triads.html %} </div>
 
@@ -286,13 +286,13 @@ There are way more unbalanced triads than expected. Instead of resolving into cl
 
 This helps explain something that often feels confusing as a user: why conflicts don’t seem to “finish.” There’s no final resolution where sides are clearly drawn and everyone moves on. Instead, relationships stay fuzzy and unstable.
 
-A big reason for this seems to be the role of meta communities — subreddits like r/subredditdrama, r/changemyview, or r/bestof. These communities regularly link outward, often critically, without being permanently “for” or “against” anyone. They keep conflicts visible without necessarily taking part in them the same way others do.
+A big reason for this seems to be the role of meta communities, subreddits like r/subredditdrama, r/changemyview, or r/bestof. These communities regularly link outward, often critically, without being permanently “for” or “against” anyone. They keep conflicts visible without necessarily taking part in them the same way others do.
 
 And this connects back to the original question in an important way.
 
-If r/ADA feels like it’s constantly being talked about — criticized here, defended there, referenced somewhere else — it’s not because it’s locked into a clean rivalry. It’s because it sits inside a web of unbalanced relationships that never quite resolve. Different communities interact with it for different reasons, in different contexts, without settling into a stable pattern.
+If r/ADA feels like it’s constantly being talked about, criticized here, defended there, referenced somewhere else, it’s not because it’s locked into a clean rivalry. It’s because it sits inside a web of unbalanced relationships that never quite resolve. Different communities interact with it for different reasons, in different contexts, without settling into a stable pattern.
 
-So the takeaway here isn’t that balance theory is useless — it’s that Reddit doesn’t behave like a closed social group. Public linking, visibility, and performative criticism keep relationships fluid and unresolved.
+So the takeaway here isn’t that balance theory is useless, it’s that Reddit doesn’t behave like a closed social group. Public linking, visibility, and performative criticism keep relationships fluid and unresolved.
 
 In short:
 Reddit conflict doesn’t end in peace treaties or permanent enemies.
@@ -314,7 +314,7 @@ It just… stays weird.
   <div class="post-body" markdown="1">
 One thing I still can’t shake is how *fast* some of these responses feel.
 
-When a subreddit gets criticized and then links out again almost immediately, it really looks like retaliation — like a clapback. And when the response comes way later, it feels calmer, maybe more deliberate.
+When a subreddit gets criticized and then links out again almost immediately, it really looks like retaliation, like a clapback. And when the response comes way later, it feels calmer, maybe more deliberate.
 
 Is there anything in the data that actually supports that, or is timing basically just vibes?
   </div>
@@ -437,7 +437,7 @@ In practice, that means most subreddits don’t “clap back” at the original 
     </div>
   </div>
   <div class="post-body" markdown="1">
-Wait—only 1.2% is retaliation? That’s way lower than I expected.
+Wait,only 1.2% is retaliation? That’s way lower than I expected.
 So is Reddit drama mostly just… dogpiling?
   </div>
 </div>
@@ -483,7 +483,7 @@ Finally, we quantify predictive performance:
 Putting these together: **timing is weak**, but **similarity carries signal**. Subreddits that share context (same institution, same topics, same stressors) are more likely to align than attack each other directly.
 
 That ties back to the original question:
-r/csmastudents and r/ADA live in the same ecosystem. When people are stressed about the same thing, the “response” isn’t usually retaliation — it’s shared venting and coalition-building.
+r/csmastudents and r/ADA live in the same ecosystem. When people are stressed about the same thing, the “response” isn’t usually retaliation, it’s shared venting and coalition-building.
 
 **Takeaway:** Reddit conflict isn’t driven by how fast people respond.  
 It’s driven more by **who is similar**, **who is visible**, and **who repeatedly becomes a focal point**.
@@ -528,15 +528,15 @@ So… Why Does r/ADA Get So Much Hate?
 
 Alright, let’s zoom out and tie all of this together.
 
-Looking across thousands of interactions between subreddits, a pretty consistent picture emerges — and it’s a lot more nuanced than “people just like to hate.”
+Looking across thousands of interactions between subreddits, a pretty consistent picture emerges, and it’s a lot more nuanced than “people just like to hate.”
 
 First, conflict on Reddit does spread. When one community publicly criticizes another, it often triggers follow-ups. Not always, but more often than random chance would suggest. So if r/ADA gets called out once, that does make it more likely to show up in later conflict elsewhere. That alone already helps explain why the criticism can feel recurring rather than isolated.
 
-At the same time, most conflicts are small and short-lived. The majority stop after one extra step. Big, multi-subreddit blow-ups do happen, but they’re rare. What’s much more common is lots of little flare-ups that fade quickly — and over time, those add up in people’s feeds and memories.
+At the same time, most conflicts are small and short-lived. The majority stop after one extra step. Big, multi-subreddit blow-ups do happen, but they’re rare. What’s much more common is lots of little flare-ups that fade quickly, and over time, those add up in people’s feeds and memories.
 
 When subreddits do respond, they almost never retaliate directly. Instead, they overwhelmingly align with others. This is why conflict on Reddit often looks like dogpiling rather than back-and-forth fighting. Timing doesn’t really matter here: fast replies aren’t angrier, slow replies aren’t calmer. What matters is who shares context, identity, or frustration.
 
-And that’s a big piece of the r/ADA story. r/csmastudents and r/ADA don’t exist in separate worlds. They’re part of the same ecosystem. When similar communities align around shared stress — workload, grading, pressure — it creates repeated waves of criticism, even without anyone actively trying to escalate things.
+And that’s a big piece of the r/ADA story. r/csmastudents and r/ADA don’t exist in separate worlds. They’re part of the same ecosystem. When similar communities align around shared stress, workload, grading, pressure, it creates repeated waves of criticism, even without anyone actively trying to escalate things.
 
 Finally, these relationships don’t cleanly resolve. Reddit doesn’t settle into stable rivalries or lasting alliances. A lot of interactions stay unbalanced and unresolved, especially around visible or “meta” communities that keep resurfacing conflicts without owning them. That keeps topics alive without pushing them toward a final showdown.
 
@@ -544,13 +544,13 @@ So to answer the original question:
 
 Is r/ADA hated because the class is hard?
 
-Partly — but more importantly, because visibility, similarity, and network structure keep pulling it back into attention. Not because everyone is constantly angry at it, but because many small, short-lived conflicts keep overlapping.
+Partly, but more importantly, because visibility, similarity, and network structure keep pulling it back into attention. Not because everyone is constantly angry at it, but because many small, short-lived conflicts keep overlapping.
 
-Reddit isn’t dominated by giant, ongoing wars between communities. It’s shaped by lots of brief disagreements that spread through attention, reshape alignments, and then fade — until the next one pops up.
+Reddit isn’t dominated by giant, ongoing wars between communities. It’s shaped by lots of brief disagreements that spread through attention, reshape alignments, and then fade, until the next one pops up.
 
 Some pieces are still open questions, like exactly which communities amplify conflict the most and how topic similarity shapes alliances. But even without those final answers, one thing is clear:
 
-Disagreement on Reddit is frequent and public — but most of the time, it’s temporary.
+Disagreement on Reddit is frequent and public, but most of the time, it’s temporary.
 And what feels like “constant hate” is usually many small moments of friction adding up, not a single sustained feud.
 
   </div>
@@ -571,12 +571,12 @@ And what feels like “constant hate” is usually many small moments of frictio
   <div class="post-body" markdown="1">
 Just wanted to say thanks for taking the time to break all of this down.
 
-I came in assuming that r/ADA was kind of stuck in a straightforward rivalry — like people were mad about the class and kept going after it. What I didn’t realize is how much of this is about *visibility* and *similarity* rather than direct hostility.
+I came in assuming that r/ADA was kind of stuck in a straightforward rivalry, like people were mad about the class and kept going after it. What I didn’t realize is how much of this is about *visibility* and *similarity* rather than direct hostility.
 
 Seeing that most conflicts are short-lived, that retaliation is actually rare, and that alignment is driven by shared context really reframes the whole thing. It explains why it *feels* like constant hate without there being one big ongoing feud.
 
 Honestly, this makes Reddit drama feel a lot less personal and a lot more structural. Still annoying sometimes, but easier to understand.
 
-Appreciate the work you’re doing here — definitely sticking around this sub.
+Appreciate the work you’re doing here, definitely sticking around this sub.
   </div>
 </div>
