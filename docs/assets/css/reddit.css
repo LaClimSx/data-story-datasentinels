@@ -67,30 +67,47 @@ body{
   margin: 0 auto;
   padding: 14px;
   display:grid;
-  grid-template-columns: 220px 1fr 300px;
+  grid-template-columns: 300px 1fr;
   gap: 14px;
   align-items:start;
 }
 @media (max-width: 1100px){
-  .app{grid-template-columns: 220px 1fr;}
-  .rightbar{display:none;}
-}
-@media (max-width: 860px){
   .app{grid-template-columns: 1fr;}
   .leftnav{position: static;}
 }
 
+.leftcol{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: sticky;
+  top: 62px;                 /* below the topbar */
+  align-self: start;
+  max-height: calc(100vh - 62px - 14px); /* viewport minus topbar minus page padding */
+  overflow: auto;
+}
+
 /* Left nav */
 .leftnav{
-  position: sticky;
+  position: static;
   top: 62px;
-  align-self: start;
   background: var(--panel);
   border: 1px solid var(--line2);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 12px;
 }
+
+.leftnav .card{
+  margin-top: 12px;
+}
+
+.leftcards{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .nav-title{
   font-size: 12px;
   font-weight: 700;
@@ -206,8 +223,7 @@ body{
   background: #fff;
   white-space: nowrap;
 }
-.tag.todo{border-style:dashed}
-.tag.ok{border-color: rgba(0,150,80,0.35); background: rgba(0,150,80,0.06);}
+
 .tag.pin{
   border-color: rgba(255,69,0,0.35);
   background: rgba(255,69,0,0.08);
@@ -238,9 +254,22 @@ body{
   gap: 10px;
   align-items:baseline;
 }
+
+.plot img {
+  display: block;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.plot img.fig-sm { max-width: 560px; }
+.plot img.fig-md { max-width: 720px; }
+.plot img.fig-lg { max-width: 900px; }
+
+
 .plot-title{font-weight:700}
 .plot-meta{font-size:12px; color:var(--muted)}
-.plot img{width:100%; height:auto; display:block;}
 .plot iframe{width:100%; border:0; min-height: 420px; display:block;}
 
 /* Right sidebar */
