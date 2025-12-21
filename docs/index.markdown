@@ -62,7 +62,8 @@ We are delighted to see you take an interest in the conflictual and negative rel
   <div class="post-body" markdown="1">
 Reddit is often described as a collection of separate communities, thousands of subreddits, each with its own culture, rules, and conversations. But these communities do not exist in isolation. They constantly reference one another, react to events elsewhere on the platform, and sometimes clash in very public ways.
 
-One of the clearest traces of these interactions is the hyperlink. When a subreddit links to a post from another community, it is often doing more than just sharing content. In many cases, the link signals criticism, disagreement, or disapproval. These moments leave behind a visible footprint of tension between communities.
+One of the clearest traces of these interactions is the hyperlink. When a subreddit links to a post from another cotension between communities.
+mmunity, it is often doing more than just sharing content. In many cases, the link signals criticism, disagreement, or disapproval. These moments leave behind a visible footprint of tension between communities.
 
 Here, we look closely at those negative links and what happens after they appear. We follow how conflicts begin, how they spread from one subreddit to another, and how long they tend to last. We also examine which communities play a central role in keeping conflicts alive, and whether classic ideas about alliances and rivalries hold up in this online setting.
 
